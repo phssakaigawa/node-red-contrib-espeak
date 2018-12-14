@@ -1,0 +1,32 @@
+<script type="text/x-red" data-template-name="openjtalk">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> <span data-i18n="node-red:common.label.name"></span></label>
+        <input type="text" id="node-input-name" data-i18n="[placeholder]node-red:common.label.name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="openjtalk">
+    <p>Open JTalk is Japanese text to speech system. Using this node, Raspberry Pi can play voice on Node-RED.</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+       <dt>payload<span class="property-type">string</span></dt>
+       <dd>Japanese text which will be converted to voice</dd>
+    </dl>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType('openjtalk',{
+        color: '#87A980',
+        category: 'function',
+        defaults: {
+            name: { value: '' },
+        },
+        inputs:1,
+        outputs: 0,
+        align: 'right',
+        icon: 'bridge-dash.png',
+        label: function() {
+            return this.name || 'openjtalk';
+        }
+    });
+</script>

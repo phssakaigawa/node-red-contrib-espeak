@@ -1,0 +1,26 @@
+{
+  "name": "node-red-contrib-openjtalk",
+  "version": "0.0.1",
+  "description": "Node-RED node for openjtalk",
+  "main": "node.js",
+  "scripts": {
+    "test": "mocha \"test/**/*_spec.js\""
+  },
+  "node-red": {
+    "nodes": {
+      "openjtalk": "node.js"
+    }
+  },
+  "keywords": [
+    "node-red",
+    "openjtalk"
+  ],
+  "dependencies": {
+    "openjtalk": "0.1.6"
+  },
+  "devDependencies": {
+    "node-red": "0.18.7",
+    "node-red-node-test-helper": "0.1.8"
+  },
+  "license": "Apache-2.0"
+}
