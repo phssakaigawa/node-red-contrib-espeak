@@ -4,7 +4,7 @@ node-red-contrib-openjtalk
 Node-RED node for Open JTalk
 
 Open JTalk is Japanese text to speech system.
-Using this node, Raspberry Pi can plays voice on Node-RED.
+Using this node, Raspberry Pi can play voice on Node-RED.
 
 Raspbian, Ubuntu and macOS are supported in this node.
 
