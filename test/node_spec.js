@@ -4,7 +4,7 @@ var node = require("../node.js");
 
 helper.init(require.resolve('node-red'));
 
-describe('openjtalk node', function () {
+describe('espeak node', function () {
 
     before(function (done) {
         helper.startServer(done);
@@ -19,17 +19,17 @@ describe('openjtalk node', function () {
     });
 
     it('should be loaded', function (done) {
-        var flow = [{ id: "n1", type: "openjtalk", name: "openjtalk" }];
+        var flow = [{ id: "n1", type: "espeak", name: "espeak" }];
         helper.load(node, flow, function () {
             var n1 = helper.getNode("n1");
-            n1.should.have.property('name', 'openjtalk');
+            n1.should.have.property('name', 'espeak');
             done();
         });
     });
 
     it('should have payload', function (done) {
         var flow = [
-            { id: "n1", type: "openjtalk", name: "openjtalk", wires: [["n2"]] },
+            { id: "n1", type: "espeak", name: "espeak", wires: [["n2"]] },
             { id: "n2", type: "helper" }
         ];
         helper.load(node, flow, function () {

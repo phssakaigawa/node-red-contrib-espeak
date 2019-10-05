@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-openjtalk",
-  "version": "0.0.5",
-  "description": "Node-RED node for Open JTalk",
+  "name": "node-red-contrib-espeak",
+  "version": "0.0.1",
+  "description": "Node-RED node for espeak",
   "main": "node.js",
   "scripts": {
     "test": "mocha \"test/**/*_spec.js\""
@@ -13,10 +13,10 @@
   },
   "keywords": [
     "node-red",
-    "openjtalk"
+    "node-espeak"
   ],
   "dependencies": {
-    "openjtalk": "0.1.6"
+    "node-espeak": "0.2.1"
   },
   "devDependencies": {
     "node-red": "0.18.7",
@@ -28,11 +28,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zuhito/node-red-contrib-openjtalk.git"
+    "url": "git+https://github.com/phssakaigawa/node-red-contrib-espeak.git"
   },
-  "author": "zuhito",
+  "author": "phssakaigawa",
   "bugs": {
-    "url": "https://github.com/zuhito/node-red-contrib-openjtalk/issues"
+    "url": "https://github.com/phssakaigawa/node-red-contrib-espeak/issues"
   },
-  "homepage": "https://github.com/zuhito/node-red-contrib-openjtalk#readme"
+  "homepage": "https://github.com/phssakaigawa/node-red-contrib-espeak#readme"
 }

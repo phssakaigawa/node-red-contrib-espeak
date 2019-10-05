@@ -1,5 +1,5 @@
-// name: openjtalk
+// name: espeak
 // outputs: 0
-var OpenJTalk = global.get('openjtalk');
-var mei = new OpenJTalk();
+var Espeak = global.get('espeak');
+var mei = new Espeak();
 mei.talk(msg.payload);

@@ -6,16 +6,16 @@
 </script>
 
 <script type="text/x-red" data-help-name="openjtalk">
-    <p>Open JTalk is Japanese text to speech system. Using this node, Raspberry Pi can play voice on Node-RED.</p>
+    <p>Espeak is English text to speech system. Using this node, Raspberry Pi can play voice on Node-RED.</p>
     <h3>Inputs</h3>
     <dl class="message-properties">
        <dt>payload<span class="property-type">string</span></dt>
-       <dd>Japanese text which will be converted to voice</dd>
+       <dd>English text which will be converted to voice</dd>
     </dl>
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('openjtalk',{
+    RED.nodes.registerType('espeak',{
         color: '#87A980',
         category: 'function',
         defaults: {
@@ -26,7 +26,7 @@
         align: 'right',
         icon: 'bridge-dash.png',
         label: function() {
-            return this.name || 'openjtalk';
+            return this.name || 'espeak';
         }
     });
 </script>
